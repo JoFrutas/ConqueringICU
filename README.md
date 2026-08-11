@@ -62,7 +62,7 @@ Your oath is simple:
 
 This repository contains **player documentation only**. The Windows installer is deliberately hosted separately so the GitHub page remains a light, readable home for the manuals.
 
-- **Official demo download:** a MediaFire link will be added here after the authorised `Conquering-Critical-Care-Demo-Setup-0.4.0.exe` upload is complete.
+- **Official demo download:** [Download `Conquering-Critical-Care-Demo-Setup-0.4.0.exe` from MediaFire](https://www.mediafire.com/file/ss3n1gwk8f0goao/Conquering-Critical-Care-Demo-Setup-0.4.0.exe/file).
 - Only the installer is intended for MediaFire distribution; the README and both manuals remain here on GitHub.
 - The full campaign is previewed in the Command Archive but is not yet offered as a public Windows download from this repository.
 - Do not download GitHub's automatically generated **Source code (zip)** expecting it to behave like the game installer.
