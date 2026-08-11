@@ -89,7 +89,7 @@ The installed demo does **not** require Node.js, Python, administrator access, o
 
 ### Download and install
 
-The official MediaFire link will be published on the [Manual Library](../README.md) after the authorised upload is complete. Download this file:
+Download the authorised installer from the [official MediaFire page](https://www.mediafire.com/file/ss3n1gwk8f0goao/Conquering-Critical-Care-Demo-Setup-0.4.0.exe/file):
 
 ```text
 Conquering-Critical-Care-Demo-Setup-0.4.0.exe
