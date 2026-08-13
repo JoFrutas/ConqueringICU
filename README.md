@@ -69,6 +69,25 @@ This repository contains **player documentation only**. The Windows installer is
 
 > **Data note for version 0.4.0:** this installer has no remote analytics service configured and does not transmit gameplay answers. Progress and preferences remain local to the player's browser profile. Any future data-enabled build must be identified and documented separately.
 
+### Where the demo is installed — and how to remove it
+
+The demo is installed only for the current Windows user in:
+
+```text
+%LOCALAPPDATA%\Conquering Critical Care Demo
+```
+
+To open that location, press **Windows key + R**, paste the path above, and press **Enter**.
+
+To remove the demo completely:
+
+1. right-click the demo icon beside the Windows clock and choose **Sair** (Exit);
+2. delete the `Conquering Critical Care Demo` folder from `%LOCALAPPDATA%`;
+3. delete any **Conquering Critical Care Demo** shortcuts left on the Desktop or Start menu;
+4. optionally clear the browser's site data for `http://127.0.0.1:48173` if you also want to erase local progress and preferences.
+
+The version 0.4.0 pilot installer is per-user and does not create a separate entry in Windows **Installed apps**. Deleting the game folder does not by itself delete the browser save.
+
 Read the appropriate manual before installation. If a Windows build is unsigned, verify that it came from the authorised source and compare its SHA-256 value with the value published here. For demo version 0.4.0, the validated installer SHA-256 is:
 
 ```text
