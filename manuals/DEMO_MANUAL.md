@@ -107,7 +107,7 @@ The demo installs only for the current Windows user at:
 %LOCALAPPDATA%\Conquering Critical Care Demo
 ```
 
-Administrator privileges are not required.
+To open this folder at any time, press **Windows key + R**, paste the path above, and press **Enter**. Administrator privileges are not required. The installer also creates **Conquering Critical Care Demo** shortcuts on the Desktop and in the Start menu.
 
 #### Verified demo installer checksum
 
@@ -388,18 +388,21 @@ Do not attempt to bypass workplace security controls. Ask the organiser for an a
 
 ## Uninstalling
 
-1. Exit the launcher from the notification area by choosing **Sair** (Exit).
-2. Delete:
+The version 0.4.0 pilot installer does not create a separate entry in Windows **Installed apps**, so remove it as follows:
+
+1. Right-click the demo icon beside the Windows clock and choose **Sair** (Exit).
+2. Press **Windows key + R**.
+3. Paste the following path and press **Enter**:
 
 ```text
 %LOCALAPPDATA%\Conquering Critical Care Demo
 ```
 
-3. Remove the Desktop and Start menu shortcuts if they remain.
-4. If you also want to remove local progress and data choices, clear the browser's site data for `http://127.0.0.1:48173` in the same browser profile used to play.
+4. Delete the entire **Conquering Critical Care Demo** folder.
+5. Delete any **Conquering Critical Care Demo** shortcuts left on the Desktop or in the Start menu.
+6. If you also want to erase local progress and data choices, clear the browser's site data for `http://127.0.0.1:48173` in the same browser profile used to play.
 
-The current pilot installer is per-user and does not create a separate entry in Windows **Installed apps**.
-Deleting the installed files alone does not erase browser storage; without optional step 4, the local save and preferences may remain available after reinstallation.
+Deleting the installed folder removes the game files. It does not by itself erase browser storage; without optional step 6, the local save and preferences may return after reinstallation.
 
 ## End of the first watch
 
