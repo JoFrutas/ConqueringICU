@@ -1,7 +1,7 @@
 # CONQUERING CRITICAL CARE — DEMO FIELD MANUAL
 
 <p align="center"><strong>THE FIRST WATCH · THREE-CASTLE EDITION</strong></p>
-<p align="center"><em>Windows installation, field instructions, clinical combat, and the opening legend of Continua</em></p>
+<p align="center"><em>Windows and macOS setup, field instructions, clinical combat, and the opening legend of Continua</em></p>
 
 ```text
 ┌─────────────────────────────────────────────────────────────────┐
@@ -23,6 +23,7 @@ Conquering Critical Care is a tactical educational RPG about Intensive Care Medi
 - [What the demo includes](#what-the-demo-includes)
 - [System requirements](#system-requirements)
 - [Installing the Windows demo](#installing-the-windows-demo)
+- [Opening the macOS portable demo](#opening-the-macos-portable-demo)
 - [Starting and closing the game](#starting-and-closing-the-game)
 - [Creating your commander](#creating-your-commander)
 - [How to play](#how-to-play)
@@ -32,7 +33,7 @@ Conquering Critical Care is a tactical educational RPG about Intensive Care Medi
 - [Saving and restarting](#saving-and-restarting)
 - [Data and privacy](#data-and-privacy)
 - [Troubleshooting](#troubleshooting)
-- [Uninstalling](#uninstalling)
+- [Removing the demo](#removing-the-demo)
 
 ## The opening legend
 
@@ -71,19 +72,20 @@ That commander is you.
 | Playable class | Balanced Intensivist |
 | Preview classes | Ventilator Strategist, Shock Commander, Sepsis Warden — visible but unavailable |
 | Difficulty | Foundation, Advanced, Board Exam, Nightmare ICU |
-| Saving | Automatic, local to the browser and Windows profile |
+| Saving | Automatic, local to the browser profile on that computer |
 | Completion | Secure all three castles to complete the First Watch |
 
 The remaining specialists, castles, bosses, evolutions, and challenge modes belong to the full campaign.
 
 ## System requirements
 
-- Windows 10 or Windows 11.
-- A modern browser such as Microsoft Edge, Google Chrome, or Firefox.
+- Windows 10/11, or macOS 11 or later.
+- A modern browser such as Microsoft Edge, Google Chrome, Firefox, or Safari.
 - A mouse or trackpad. All commands are shown on screen; a keyboard is not required for gameplay.
-- Approximately 250 MB of free disk space after installation. Allow at least 650 MB temporarily while running the installer.
+- Windows: approximately 250 MB after installation; allow at least 650 MB temporarily while running the installer.
+- macOS: approximately 258 MiB for the ZIP and 405 MiB after extraction; allow at least 700 MiB while downloading and extracting.
 
-The installed demo does **not** require Node.js, Python, administrator access, or an Internet connection for ordinary play.
+Neither public package requires Node.js, Python, administrator access, or an Internet connection for ordinary play.
 
 ## Installing the Windows demo
 
@@ -130,31 +132,70 @@ Only continue when both conditions are true:
 
 If you trust that copy, choose **More info** and then **Run anyway**. Never bypass SmartScreen for an installer received from an unknown source.
 
+## Opening the macOS portable demo
+
+### Download and verify
+
+Download the authorised ZIP from the [official MediaFire page](https://www.mediafire.com/file/ytitklcgq7vc81i/Conquering-Critical-Care-Demo-Mac-0.4.0.zip):
+
+```text
+Conquering-Critical-Care-Demo-Mac-0.4.0.zip
+```
+
+The package supports macOS 11 or later and contains native runtimes for both Apple Silicon and 64-bit Intel Macs.
+
+Verified macOS ZIP SHA-256:
+
+```text
+B9F0CC8AC9F06D5396D350934B1236C7F05EDBCA079B4888994842FEE122A327
+```
+
+The public MediaFire file was downloaded again after upload and matched this checksum exactly.
+
+### Open the demo
+
+1. Download the ZIP to a normal folder such as **Downloads**.
+2. Verify its SHA-256 value against the checksum above.
+3. Extract the complete ZIP with the built-in macOS Archive Utility. Do not run the demo from inside the ZIP preview.
+4. Open the extracted `Conquering-Critical-Care-Demo-Mac-0.4.0` folder.
+5. Double-click **`Open Demo.command`**.
+6. Keep the Terminal window open while playing.
+
+The launcher selects the correct bundled runtime, starts a server only on `127.0.0.1:48173`, and opens the default browser. Keep `Open Demo.command`, the `app` folder, `launcher`, and `runtime` together inside the extracted demo folder.
+
+### If macOS blocks the first launch
+
+This first Mac package is not signed or notarized by Apple, so Gatekeeper may block an ordinary double-click.
+
+Only continue when the ZIP came from the official link above and its SHA-256 value matches this manual. Then:
+
+1. Control-click `Open Demo.command`.
+2. Choose **Open**.
+3. Confirm **Open** in the warning.
+4. If the option is still unavailable, open **System Settings → Privacy & Security** and choose **Open Anyway** for this launcher.
+
+Do not disable Gatekeeper globally and do not use `sudo`. A real-Mac smoke test remains recommended before broad institutional deployment, particularly on both Apple Silicon and Intel hardware.
+
 ## Starting and closing the game
 
-The launcher opens the game in your default browser at:
+Both launchers open the game in your default browser at:
 
 ```text
 http://127.0.0.1:48173
 ```
 
-This address is local to your own computer. It is not a public website.
+This address is local to your own computer. It is not a public website, and the server is not exposed to other computers on the network.
 
-The launcher remains in the Windows notification area beside the clock. Closing the browser tab does not close the launcher.
+Closing the browser tab does not stop the local launcher.
 
-To finish:
-
-1. close the browser tab;
-2. right-click the Conquering Critical Care icon beside the clock;
-3. select **Sair** (Exit).
-
-Double-clicking that icon reopens the game if the browser tab was closed.
+- **Windows:** right-click the Conquering Critical Care icon beside the clock and choose **Sair** (Exit). Double-clicking the icon reopens the game.
+- **macOS:** keep the Terminal window open while playing. Close that window or press **Control+C** to stop the demo.
 
 ## Creating your commander
 
 ### 1. Participant notice
 
-Read the notice and choose your data preferences. Optional sharing is not required to play. This version 0.4.0 installer has no remote analytics service configured: it continues locally and does not transmit gameplay answers.
+Read the notice and choose your data preferences. Optional sharing is not required to play. The public version 0.4.0 Windows and macOS packages have no remote analytics service configured: they continue locally and do not transmit gameplay answers.
 
 Select **Enter Demo**.
 
@@ -320,7 +361,7 @@ Antibiotics can fight on the walls while the source remains beneath the fortress
 
 ## Saving and restarting
 
-Progress is saved automatically in the local storage of the browser and Windows profile used to play.
+Progress is saved automatically in the local storage of the browser profile used to play.
 
 - Return with the same browser, browser profile, and local address.
 - Avoid private or incognito mode if you want to keep progress.
@@ -335,7 +376,7 @@ After all three castles are complete, the campaign remains available so you can 
 
 The game remains playable when optional analytics are declined.
 
-The public version 0.4.0 demo installer has no remote analytics endpoint configured and **does not transmit gameplay answers**. Campaign progress and data choices remain in local browser storage.
+The public version 0.4.0 Windows installer and macOS ZIP have no remote analytics endpoint configured and **do not transmit gameplay answers**. Campaign progress and data choices remain in local browser storage.
 
 In a future build that is explicitly configured by the organiser, and only when the participant accepts sharing, pseudonymous events may include:
 
@@ -352,19 +393,23 @@ Use **Data Choices** on the title screen to review preferences for future collec
 
 ## Troubleshooting
 
-### Nothing happens after opening the shortcut
+### Nothing happens after opening the Windows shortcut
 
 Exit any copy of the launcher still visible in the notification area and try the shortcut again. If the installation appears incomplete, run the official installer again.
 
+### Nothing happens after opening `Open Demo.command`
+
+Confirm that the complete Mac ZIP was extracted and that `Open Demo.command`, `app`, `launcher`, and `runtime` remain together. If macOS reports **Permission denied**, extract the ZIP again with the built-in Archive Utility. The official ZIP contains the required Unix executable permissions.
+
 ### The browser did not open
 
-If the launcher icon is visible beside the clock, manually open:
+While the Windows launcher icon or Mac Terminal window is still present, manually open:
 
 ```text
 http://127.0.0.1:48173
 ```
 
-If the icon is absent, start the demo again from the Desktop or Start menu shortcut.
+If neither launcher is running, start the demo again from the Windows shortcut or `Open Demo.command`.
 
 ### Port 48173 is already in use
 
@@ -372,7 +417,7 @@ Exit any other copy of the demo. If another application uses the port, close tha
 
 ### Music is silent
 
-Click once inside the game, check the music control in the upper-right corner, and check Windows volume. Browsers can block audio until the first user interaction. The game remains playable without sound.
+Click once inside the game, check the music control in the upper-right corner, and check system volume. Browsers can block audio until the first user interaction. The game remains playable without sound.
 
 ### Progress disappeared
 
@@ -380,13 +425,19 @@ Confirm that you are using the same browser and profile, that private browsing w
 
 ### Closing the tab did not stop the game
 
-Right-click the launcher icon in the Windows notification area and choose **Sair** (Exit).
+On Windows, right-click the launcher icon in the notification area and choose **Sair** (Exit). On macOS, close the Terminal window that opened with the demo or press **Control+C** in that window.
 
-### The installer is blocked by organisational policy
+### macOS still blocks the launcher
+
+Control-click `Open Demo.command` and choose **Open**. If necessary, use **System Settings → Privacy & Security → Open Anyway**. Do not disable Gatekeeper globally. If organisational policy prevents opening an unsigned package, ask the organiser for an approved deployment method.
+
+### The Windows installer is blocked by organisational policy
 
 Do not attempt to bypass workplace security controls. Ask the organiser for an approved deployment method or use the demo only on an authorised device.
 
-## Uninstalling
+## Removing the demo
+
+### Windows
 
 The version 0.4.0 pilot installer does not create a separate entry in Windows **Installed apps**, so remove it as follows:
 
@@ -403,6 +454,17 @@ The version 0.4.0 pilot installer does not create a separate entry in Windows **
 6. If you also want to erase local progress and data choices, clear the browser's site data for `http://127.0.0.1:48173` in the same browser profile used to play.
 
 Deleting the installed folder removes the game files. It does not by itself erase browser storage; without optional step 6, the local save and preferences may return after reinstallation.
+
+### macOS
+
+The portable Mac demo is not installed into the system.
+
+1. Close the Terminal window used by the demo, or press **Control+C** in that window.
+2. Move the extracted `Conquering-Critical-Care-Demo-Mac-0.4.0` folder to the Trash.
+3. Empty the Trash when convenient.
+4. If you also want to erase local progress and data choices, clear the browser's site data for `http://127.0.0.1:48173` in the browser profile used to play.
+
+Deleting the extracted folder removes the game files but does not by itself erase browser storage.
 
 ## End of the first watch
 
