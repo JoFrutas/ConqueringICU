@@ -21,7 +21,7 @@ The purpose is the same as the great console manuals of an earlier age: to make 
 
 ## Archive index
 
-- [Release and installation status](#release-and-installation-status)
+- [Release and platform status](#release-and-platform-status)
 - [Prologue — The Unbroken Watch](#prologue--the-unbroken-watch)
 - [Your campaign](#your-campaign)
 - [Creating a commander](#creating-a-commander)
@@ -39,27 +39,34 @@ The purpose is the same as the great console manuals of an earlier age: to make 
 - [Glossary of the watch](#glossary-of-the-watch)
 - [The sealed final page](#the-sealed-final-page)
 
-## Release and installation status
+## Release and platform status
 
-The full campaign is **not currently offered as a public Windows download from this documentation repository**. The only public package planned for the first distribution phase is the three-castle demo installer hosted separately on MediaFire.
+The three-castle demo is publicly available for both **Windows** and **macOS**. The playable packages are hosted separately on MediaFire; this GitHub repository remains the home of the player manuals.
 
-When a public full-game Windows build is released, its official link, filename, system requirements, checksum, and installation steps will be added here. Do not assume that the demo installer unlocks the full campaign, and do not use GitHub's automatic **Source code (zip)** as though it were a Windows game package.
+| Edition | Windows | macOS |
+|---|---|---|
+| Three-castle demo 0.4.0 | [Public per-user installer](https://www.mediafire.com/file/ss3n1gwk8f0goao/Conquering-Critical-Care-Demo-Setup-0.4.0.exe/file) | [Public portable ZIP for Apple Silicon and Intel](https://www.mediafire.com/file/ytitklcgq7vc81i/Conquering-Critical-Care-Demo-Mac-0.4.0.zip) |
+| Full campaign | Not yet offered as a public download | Not yet offered as a public download |
 
-The demo and full campaign use separate edition rules and separate saves. Installing the demo is an invitation to the First Watch, not an incomplete installation of the full game.
+The [Demo Field Manual](DEMO_MANUAL.md) contains the current system requirements, checksums, opening instructions, security guidance, and removal steps for both platforms.
 
-### Planned player installation workflow
+When a full-campaign package is released for either platform, its official link, filename, system requirements, checksum, and platform-specific setup steps will be added here. Do not assume that either demo package unlocks the full campaign, and do not use GitHub's automatic **Source code (zip)** as though it were a playable game package.
 
-When the full campaign receives an official Windows release:
+The demo and full campaign use separate edition rules and separate saves. Opening the demo is an invitation to the First Watch, not an incomplete installation of the full game.
+
+### Planned player setup workflow
+
+When the full campaign receives an official public release:
 
 1. follow only the download link published in this Manual Library;
-2. download the full-game installer, not GitHub's automatic source archive;
-3. compare the installer's SHA-256 value with the checksum published beside it;
+2. choose the package made for your operating system, not GitHub's automatic source archive;
+3. compare that package's SHA-256 value with the checksum published beside it;
 4. close any running demo or older full-game launcher;
-5. run the installer and follow the release-specific prompts;
-6. start the game from the shortcut created by that installer;
-7. keep the demo installed only if you wish to retain it as a separate edition.
+5. follow the release-specific Windows or macOS setup instructions;
+6. start the game with the launcher documented for that package;
+7. keep the demo only if you wish to retain it as a separate edition.
 
-The final filename, disk-space requirement, update behaviour, and signing status are intentionally not invented in this preview. They will be documented after the full Windows package has been built and validated.
+Final filenames, disk-space requirements, update behaviour, signing or notarization status, and supported operating-system versions are intentionally not invented in this preview. They will be documented separately after each full-game package has been built and validated.
 
 ## Prologue — The Unbroken Watch
 
