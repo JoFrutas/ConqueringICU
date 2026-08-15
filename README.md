@@ -46,7 +46,7 @@ Your oath is simple:
 - **3 castles:** Triage Keep, Bacteremia Bluff, and Source Control Stronghold.
 - **50 clinical questions** restricted to those castles.
 - **1 playable class:** Balanced Intensivist.
-- Four difficulty settings and automatic local saving.
+- Four difficulty settings and automatic local saving on both Windows and macOS.
 - Official Windows and macOS packages distributed through MediaFire; no Node.js or administrator access required.
 
 ### Full campaign
@@ -64,6 +64,8 @@ This repository contains **player documentation only**. The playable packages ar
 
 ### Official demo downloads
 
+The Windows installer and macOS portable ZIP contain the same version 0.4.0 demo; choose the package for your operating system.
+
 | Platform | Package | Official download |
 |---|---|---|
 | Windows 10/11 | Per-user installer | [Download `Conquering-Critical-Care-Demo-Setup-0.4.0.exe` from MediaFire](https://www.mediafire.com/file/ss3n1gwk8f0goao/Conquering-Critical-Care-Demo-Setup-0.4.0.exe/file) |
@@ -73,7 +75,7 @@ The full campaign is previewed in the Command Archive but is not yet offered as 
 
 > **Data note for version 0.4.0:** these public demo packages have no remote analytics service configured and do not transmit gameplay answers. Progress and preferences remain local to the player's browser profile. Any future data-enabled build must be identified and documented separately.
 
-### Windows installation
+### Windows setup and launch
 
 The Windows package installs only for the current user and creates Desktop and Start menu shortcuts. It does not require Node.js, Python, administrator privileges, or an Internet connection for ordinary play.
 
@@ -91,7 +93,7 @@ The installation folder is:
 
 To remove it, exit the launcher from the icon beside the Windows clock, delete that folder, and remove any remaining shortcuts. The pilot installer does not create a separate entry in Windows **Installed apps**.
 
-### macOS portable demo
+### macOS setup and launch
 
 The macOS download is a portable ZIP, not a `.dmg` or `.pkg` installer. It includes native runtimes for both Apple Silicon and 64-bit Intel Macs and does not require Node.js, Python, administrator privileges, or an Internet connection for ordinary play.
 
@@ -109,7 +111,7 @@ B9F0CC8AC9F06D5396D350934B1236C7F05EDBCA079B4888994842FEE122A327
 
 This first macOS package is not signed or notarized by Apple. If macOS blocks it, Control-click `Open Demo.command`, choose **Open**, and confirm. If required, use **System Settings → Privacy & Security → Open Anyway**. Only do this for the file downloaded from the official link above after verifying its checksum.
 
-To remove the Mac demo, close its Terminal window and move the extracted demo folder to the Trash. Clearing browser site data for `http://127.0.0.1:48173` is optional and removes local progress and preferences.
+To remove the macOS demo, close its Terminal window and move the extracted demo folder to the Trash. Clearing browser site data for `http://127.0.0.1:48173` is optional and removes local progress and preferences.
 
 Read the [Demo Field Manual](manuals/DEMO_MANUAL.md) for complete platform-specific instructions, saving behaviour, privacy information, and troubleshooting.
 
