@@ -13,7 +13,7 @@
 
 ## Before you take command
 
-Conquering Critical Care is a tactical educational RPG about Intensive Care Medicine. The demo is a self-contained opening campaign with three castles, one playable specialist, 50 clinical questions, automatic saving, music, video, and all required game assets.
+Conquering Critical Care is a tactical educational RPG about Intensive Care Medicine. The Windows installer and macOS portable ZIP contain the same self-contained opening campaign with three castles, one playable specialist, 50 clinical questions, automatic saving, music, video, and all required game assets.
 
 > **Educational use only.** This game is not a medical device and does not provide patient-specific advice. Always follow current evidence, clinical judgement, local protocols, and appropriate senior or multidisciplinary support.
 
@@ -72,7 +72,7 @@ That commander is you.
 | Playable class | Balanced Intensivist |
 | Preview classes | Ventilator Strategist, Shock Commander, Sepsis Warden — visible but unavailable |
 | Difficulty | Foundation, Advanced, Board Exam, Nightmare ICU |
-| Saving | Automatic, local to the browser profile on that computer |
+| Saving | Automatic on both Windows and macOS; local to the browser profile on that computer |
 | Completion | Secure all three castles to complete the First Watch |
 
 The remaining specialists, castles, bosses, evolutions, and challenge modes belong to the full campaign.
@@ -165,7 +165,7 @@ The launcher selects the correct bundled runtime, starts a server only on `127.0
 
 ### If macOS blocks the first launch
 
-This first Mac package is not signed or notarized by Apple, so Gatekeeper may block an ordinary double-click.
+This first macOS package is not signed or notarized by Apple, so Gatekeeper may block an ordinary double-click.
 
 Only continue when the ZIP came from the official link above and its SHA-256 value matches this manual. Then:
 
@@ -178,7 +178,7 @@ Do not disable Gatekeeper globally and do not use `sudo`. A real-Mac smoke test 
 
 ## Starting and closing the game
 
-Both launchers open the game in your default browser at:
+The Windows launcher and macOS `Open Demo.command` both open the game in your default browser at:
 
 ```text
 http://127.0.0.1:48173
@@ -361,7 +361,7 @@ Antibiotics can fight on the walls while the source remains beneath the fortress
 
 ## Saving and restarting
 
-Progress is saved automatically in the local storage of the browser profile used to play.
+On both Windows and macOS, progress is saved automatically in the local storage of the browser profile used to play.
 
 - Return with the same browser, browser profile, and local address.
 - Avoid private or incognito mode if you want to keep progress.
@@ -399,11 +399,11 @@ Exit any copy of the launcher still visible in the notification area and try the
 
 ### Nothing happens after opening `Open Demo.command`
 
-Confirm that the complete Mac ZIP was extracted and that `Open Demo.command`, `app`, `launcher`, and `runtime` remain together. If macOS reports **Permission denied**, extract the ZIP again with the built-in Archive Utility. The official ZIP contains the required Unix executable permissions.
+Confirm that the complete macOS ZIP was extracted and that `Open Demo.command`, `app`, `launcher`, and `runtime` remain together. If macOS reports **Permission denied**, extract the ZIP again with the built-in Archive Utility. The official ZIP contains the required Unix executable permissions.
 
 ### The browser did not open
 
-While the Windows launcher icon or Mac Terminal window is still present, manually open:
+While the Windows launcher icon or macOS Terminal window is still present, manually open:
 
 ```text
 http://127.0.0.1:48173
@@ -457,7 +457,7 @@ Deleting the installed folder removes the game files. It does not by itself eras
 
 ### macOS
 
-The portable Mac demo is not installed into the system.
+The portable macOS demo is not installed into the system.
 
 1. Close the Terminal window used by the demo, or press **Control+C** in that window.
 2. Move the extracted `Conquering-Critical-Care-Demo-Mac-0.4.0` folder to the Trash.
