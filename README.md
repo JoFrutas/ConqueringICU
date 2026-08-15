@@ -20,7 +20,7 @@ This repository is the public bookshelf for **Conquering Critical Care**, a tact
 
 | Volume | Best for | Contents |
 |---|---|---|
-| **[Demo Field Manual](manuals/DEMO_MANUAL.md)** | First-time players and demo participants | Windows installation, three-castle campaign, controls, question formats, saving, privacy, troubleshooting, and a spoiler-light introduction to Continua |
+| **[Demo Field Manual](manuals/DEMO_MANUAL.md)** | First-time players and demo participants | Windows and macOS setup, three-castle campaign, controls, question formats, saving, privacy, troubleshooting, and a spoiler-light introduction to Continua |
 | **[Full Campaign Command Archive](manuals/FULL_GAME_MANUAL.md)** | Players curious about the complete game | A spoiler-light preview manual: full campaign scale, classes, formations, special moves, realm atlas, selected boss dossiers, advanced modes, strategy, and deeper lore |
 
 ## The legend in one page
@@ -47,7 +47,7 @@ Your oath is simple:
 - **50 clinical questions** restricted to those castles.
 - **1 playable class:** Balanced Intensivist.
 - Four difficulty settings and automatic local saving.
-- A self-contained Windows installer distributed through the official MediaFire link; no Node.js or administrator access required.
+- Official Windows and macOS packages distributed through MediaFire; no Node.js or administrator access required.
 
 ### Full campaign
 
@@ -60,41 +60,58 @@ Your oath is simple:
 
 ## Obtaining the game
 
-This repository contains **player documentation only**. The Windows installer is deliberately hosted separately so the GitHub page remains a light, readable home for the manuals.
+This repository contains **player documentation only**. The playable packages are hosted separately so the GitHub page remains a light, readable home for the manuals.
 
-- **Official demo download:** [Download `Conquering-Critical-Care-Demo-Setup-0.4.0.exe` from MediaFire](https://www.mediafire.com/file/ss3n1gwk8f0goao/Conquering-Critical-Care-Demo-Setup-0.4.0.exe/file).
-- Only the installer is intended for MediaFire distribution; the README and both manuals remain here on GitHub.
-- The full campaign is previewed in the Command Archive but is not yet offered as a public Windows download from this repository.
-- Do not download GitHub's automatically generated **Source code (zip)** expecting it to behave like the game installer.
+### Official demo downloads
 
-> **Data note for version 0.4.0:** this installer has no remote analytics service configured and does not transmit gameplay answers. Progress and preferences remain local to the player's browser profile. Any future data-enabled build must be identified and documented separately.
+| Platform | Package | Official download |
+|---|---|---|
+| Windows 10/11 | Per-user installer | [Download `Conquering-Critical-Care-Demo-Setup-0.4.0.exe` from MediaFire](https://www.mediafire.com/file/ss3n1gwk8f0goao/Conquering-Critical-Care-Demo-Setup-0.4.0.exe/file) |
+| macOS 11 or later | Portable ZIP for Apple Silicon and Intel | [Download `Conquering-Critical-Care-Demo-Mac-0.4.0.zip` from MediaFire](https://www.mediafire.com/file/ytitklcgq7vc81i/Conquering-Critical-Care-Demo-Mac-0.4.0.zip) |
 
-### Where the demo is installed — and how to remove it
+The full campaign is previewed in the Command Archive but is not yet offered as a public download from this repository. Do not download GitHub's automatically generated **Source code (zip)** expecting it to behave like the game.
 
-The demo is installed only for the current Windows user in:
+> **Data note for version 0.4.0:** these public demo packages have no remote analytics service configured and do not transmit gameplay answers. Progress and preferences remain local to the player's browser profile. Any future data-enabled build must be identified and documented separately.
 
-```text
-%LOCALAPPDATA%\Conquering Critical Care Demo
-```
+### Windows installation
 
-To open that location, press **Windows key + R**, paste the path above, and press **Enter**.
+The Windows package installs only for the current user and creates Desktop and Start menu shortcuts. It does not require Node.js, Python, administrator privileges, or an Internet connection for ordinary play.
 
-To remove the demo completely:
-
-1. right-click the demo icon beside the Windows clock and choose **Sair** (Exit);
-2. delete the `Conquering Critical Care Demo` folder from `%LOCALAPPDATA%`;
-3. delete any **Conquering Critical Care Demo** shortcuts left on the Desktop or Start menu;
-4. optionally clear the browser's site data for `http://127.0.0.1:48173` if you also want to erase local progress and preferences.
-
-The version 0.4.0 pilot installer is per-user and does not create a separate entry in Windows **Installed apps**. Deleting the game folder does not by itself delete the browser save.
-
-Read the appropriate manual before installation. If a Windows build is unsigned, verify that it came from the authorised source and compare its SHA-256 value with the value published here. For demo version 0.4.0, the validated installer SHA-256 is:
+Validated Windows installer SHA-256:
 
 ```text
 92BC53BBC1A12B5B52081C3530684CBE0AE08F1B529425C0522D137CADBE053A
 ```
 
-If the installer is rebuilt, this value must be updated before distribution.
+The installation folder is:
+
+```text
+%LOCALAPPDATA%\Conquering Critical Care Demo
+```
+
+To remove it, exit the launcher from the icon beside the Windows clock, delete that folder, and remove any remaining shortcuts. The pilot installer does not create a separate entry in Windows **Installed apps**.
+
+### macOS portable demo
+
+The macOS download is a portable ZIP, not a `.dmg` or `.pkg` installer. It includes native runtimes for both Apple Silicon and 64-bit Intel Macs and does not require Node.js, Python, administrator privileges, or an Internet connection for ordinary play.
+
+1. Download and extract the complete ZIP with the built-in macOS Archive Utility.
+2. Open the extracted `Conquering-Critical-Care-Demo-Mac-0.4.0` folder.
+3. Double-click **`Open Demo.command`**.
+4. Keep the Terminal window open while playing.
+5. To stop the demo, close that Terminal window or press **Control+C**.
+
+Validated macOS ZIP SHA-256:
+
+```text
+B9F0CC8AC9F06D5396D350934B1236C7F05EDBCA079B4888994842FEE122A327
+```
+
+This first macOS package is not signed or notarized by Apple. If macOS blocks it, Control-click `Open Demo.command`, choose **Open**, and confirm. If required, use **System Settings → Privacy & Security → Open Anyway**. Only do this for the file downloaded from the official link above after verifying its checksum.
+
+To remove the Mac demo, close its Terminal window and move the extracted demo folder to the Trash. Clearing browser site data for `http://127.0.0.1:48173` is optional and removes local progress and preferences.
+
+Read the [Demo Field Manual](manuals/DEMO_MANUAL.md) for complete platform-specific instructions, saving behaviour, privacy information, and troubleshooting.
 
 ## The commander's promise
 
