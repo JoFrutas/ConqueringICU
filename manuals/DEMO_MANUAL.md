@@ -11,9 +11,11 @@
 └─────────────────────────────────────────────────────────────────┘
 ```
 
+Release **0.4.1** · [Update log](../CHANGELOG.md)
+
 ## Before you take command
 
-Conquering Critical Care is a tactical educational RPG about Intensive Care Medicine. The Windows installer and macOS portable ZIP contain the same self-contained opening campaign with three castles, one playable specialist, 50 clinical questions, automatic saving, music, video, and all required game assets.
+Conquering Critical Care is a tactical educational RPG about Intensive Care Medicine. The Windows installer and macOS portable ZIP contain the same self-contained opening campaign with three castles, one playable specialist, 62 clinical questions, automatic saving, music, video, and all required game assets.
 
 > **Educational use only.** This game is not a medical device and does not provide patient-specific advice. Always follow current evidence, clinical judgement, local protocols, and appropriate senior or multidisciplinary support.
 
@@ -68,7 +70,7 @@ That commander is you.
 | Feature | Demo content |
 |---|---|
 | Castles | Triage Keep, Bacteremia Bluff, Source Control Stronghold |
-| Clinical questions | 50 approved questions restricted to the three demo castles |
+| Clinical questions | 62 clinical questions restricted to the three demo castles |
 | Playable class | Balanced Intensivist |
 | Preview classes | Ventilator Strategist, Shock Commander, Sepsis Warden — visible but unavailable |
 | Difficulty | Foundation, Advanced, Board Exam, Nightmare ICU |
@@ -82,8 +84,8 @@ The remaining specialists, castles, bosses, evolutions, and challenge modes belo
 - Windows 10/11, or macOS 11 or later.
 - A modern browser such as Microsoft Edge, Google Chrome, Firefox, or Safari.
 - A mouse or trackpad. All commands are shown on screen; a keyboard is not required for gameplay.
-- Windows: approximately 250 MB after installation; allow at least 650 MB temporarily while running the installer.
-- macOS: approximately 258 MiB for the ZIP and 405 MiB after extraction; allow at least 700 MiB while downloading and extracting.
+- Windows: approximately 271 MiB after installation; allow at least 1.5 GB temporarily while downloading and installing.
+- macOS: approximately 340 MiB for the ZIP; allow at least 1.5 GB while downloading, extracting and installing.
 
 Neither public package requires Node.js, Python, administrator access, or an Internet connection for ordinary play.
 
@@ -91,10 +93,10 @@ Neither public package requires Node.js, Python, administrator access, or an Int
 
 ### Download and install
 
-Download the authorised installer from the [official MediaFire page](https://www.mediafire.com/file/ss3n1gwk8f0goao/Conquering-Critical-Care-Demo-Setup-0.4.0.exe/file):
+Download the authorised installer from the [official MediaFire page](https://www.mediafire.com/file/7tsnjfjkb1s0swt/Conquering-Critical-Care-Demo-Setup-0.4.1.exe/file):
 
 ```text
-Conquering-Critical-Care-Demo-Setup-0.4.0.exe
+Conquering-Critical-Care-Demo-Setup-0.4.1.exe
 ```
 
 1. Save the installer to a normal folder such as **Downloads**.
@@ -113,10 +115,10 @@ To open this folder at any time, press **Windows key + R**, paste the path above
 
 #### Verified demo installer checksum
 
-For the authorised version 0.4.0 installer, the SHA-256 value is:
+For the authorised version 0.4.1 installer, the SHA-256 value is:
 
 ```text
-92BC53BBC1A12B5B52081C3530684CBE0AE08F1B529425C0522D137CADBE053A
+0CD1D1B66364D77757B114CF4331C7E6214C6A76CAAF0C2E8FFABF4BD512D6DD
 ```
 
 If the installer has been rebuilt, use the replacement value published in the [Manual Library](../README.md) rather than this archived value.
@@ -136,10 +138,10 @@ If you trust that copy, choose **More info** and then **Run anyway**. Never bypa
 
 ### Download and verify
 
-Download the authorised ZIP from the [official MediaFire page](https://www.mediafire.com/file/ytitklcgq7vc81i/Conquering-Critical-Care-Demo-Mac-0.4.0.zip):
+Download the authorised ZIP from the [official MediaFire page](https://www.mediafire.com/file/yutjian7t3qxnle/Conquering-Critical-Care-Demo-Mac-0.4.1.zip/file):
 
 ```text
-Conquering-Critical-Care-Demo-Mac-0.4.0.zip
+Conquering-Critical-Care-Demo-Mac-0.4.1.zip
 ```
 
 The package supports macOS 11 or later and contains native runtimes for both Apple Silicon and 64-bit Intel Macs.
@@ -147,25 +149,29 @@ The package supports macOS 11 or later and contains native runtimes for both App
 Verified macOS ZIP SHA-256:
 
 ```text
-B9F0CC8AC9F06D5396D350934B1236C7F05EDBCA079B4888994842FEE122A327
+0B15B077600F5D9B8946A02794AD8401EA6F2698F21F74E46696C5423CC55CD7
 ```
 
-The public MediaFire file was downloaded again after upload and matched this checksum exactly.
+This checksum identifies the locally validated release package. Compare your downloaded file against it; the new MediaFire upload has not been independently downloaded again for verification.
 
 ### Open the demo
 
 1. Download the ZIP to a normal folder such as **Downloads**.
 2. Verify its SHA-256 value against the checksum above.
 3. Extract the complete ZIP with the built-in macOS Archive Utility. Do not run the demo from inside the ZIP preview.
-4. Open the extracted `Conquering-Critical-Care-Demo-Mac-0.4.0` folder.
+4. Open the extracted `Conquering-Critical-Care-Demo-Mac-0.4.1` folder.
 5. Double-click **`Open Demo.command`**.
 6. Keep the Terminal window open while playing.
 
 The launcher selects the correct bundled runtime, starts a server only on `127.0.0.1:48173`, and opens the default browser. Keep `Open Demo.command`, the `app` folder, `launcher`, and `runtime` together inside the extracted demo folder.
 
+### Optional installation
+
+Run **Install Demo.command** to copy the demo to `~/Applications/Conquering Critical Care Demo`, then use **Open Demo.command** in that folder. For an update, close and remove the previous installed copy before installing the replacement.
+
 ### If macOS blocks the first launch
 
-This first macOS package is not signed or notarized by Apple, so Gatekeeper may block an ordinary double-click.
+This macOS package is not signed or notarized by Apple, so Gatekeeper may block an ordinary double-click.
 
 Only continue when the ZIP came from the official link above and its SHA-256 value matches this manual. Then:
 
@@ -195,7 +201,7 @@ Closing the browser tab does not stop the local launcher.
 
 ### 1. Participant notice
 
-Read the notice and choose your data preferences. Optional sharing is not required to play. The public version 0.4.0 Windows and macOS packages have no remote analytics service configured: they continue locally and do not transmit gameplay answers.
+Read the notice and choose your data preferences. Optional sharing is not required to play. The public version 0.4.1 Windows and macOS packages have no remote analytics service configured: they continue locally and do not transmit gameplay answers.
 
 Select **Enter Demo**.
 
@@ -376,7 +382,7 @@ After all three castles are complete, the campaign remains available so you can 
 
 The game remains playable when optional analytics are declined.
 
-The public version 0.4.0 Windows installer and macOS ZIP have no remote analytics endpoint configured and **do not transmit gameplay answers**. Campaign progress and data choices remain in local browser storage.
+The public version 0.4.1 Windows installer and macOS ZIP have no remote analytics endpoint configured and **do not transmit gameplay answers**. Campaign progress and data choices remain in local browser storage.
 
 In a future build that is explicitly configured by the organiser, and only when the participant accepts sharing, pseudonymous events may include:
 
@@ -439,32 +445,21 @@ Do not attempt to bypass workplace security controls. Ask the organiser for an a
 
 ### Windows
 
-The version 0.4.0 pilot installer does not create a separate entry in Windows **Installed apps**, so remove it as follows:
+1. Close the game and exit its launcher from the icon beside the Windows clock.
+2. Open **Settings → Apps → Installed apps**.
+3. Choose **Conquering Critical Care Demo → Uninstall**.
 
-1. Right-click the demo icon beside the Windows clock and choose **Sair** (Exit).
-2. Press **Windows key + R**.
-3. Paste the following path and press **Enter**:
+Alternatively run **UNINSTALL_DEMO.bat** inside the installed folder. The uninstaller removes the files recorded during installation and its own shortcuts, while preserving additional files and browser progress. A portable copy can be removed by deleting its extracted folder after closing the launcher.
 
-```text
-%LOCALAPPDATA%\Conquering Critical Care Demo
-```
-
-4. Delete the entire **Conquering Critical Care Demo** folder.
-5. Delete any **Conquering Critical Care Demo** shortcuts left on the Desktop or in the Start menu.
-6. If you also want to erase local progress and data choices, clear the browser's site data for `http://127.0.0.1:48173` in the same browser profile used to play.
-
-Deleting the installed folder removes the game files. It does not by itself erase browser storage; without optional step 6, the local save and preferences may return after reinstallation.
+If you still have the older 0.4.0 pilot, it has no registered uninstaller: close it, remove its folder at `%LOCALAPPDATA%\Conquering Critical Care Demo` and its shortcuts before installing the new release. Keep any personal files you added to that folder.
 
 ### macOS
 
-The portable macOS demo is not installed into the system.
+1. Close the demo Terminal window or press **Control+C**.
+2. For a copy installed using **Install Demo.command**, run **Uninstall Demo.command** inside `~/Applications/Conquering Critical Care Demo` and confirm. It moves that folder to the Trash.
+3. For a portable copy, move its extracted folder to the Trash directly.
 
-1. Close the Terminal window used by the demo, or press **Control+C** in that window.
-2. Move the extracted `Conquering-Critical-Care-Demo-Mac-0.4.0` folder to the Trash.
-3. Empty the Trash when convenient.
-4. If you also want to erase local progress and data choices, clear the browser's site data for `http://127.0.0.1:48173` in the browser profile used to play.
-
-Deleting the extracted folder removes the game files but does not by itself erase browser storage.
+On either platform, removal keeps browser progress and preferences. To erase those too, clear the browser's site data for `http://127.0.0.1:48173` in the profile used to play.
 
 ## End of the first watch
 

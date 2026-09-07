@@ -45,7 +45,7 @@ The three-castle demo is publicly available for both **Windows** and **macOS**. 
 
 | Edition | Windows | macOS |
 |---|---|---|
-| Three-castle demo 0.4.0 | [Public per-user installer](https://www.mediafire.com/file/ss3n1gwk8f0goao/Conquering-Critical-Care-Demo-Setup-0.4.0.exe/file) | [Public portable ZIP for Apple Silicon and Intel](https://www.mediafire.com/file/ytitklcgq7vc81i/Conquering-Critical-Care-Demo-Mac-0.4.0.zip) |
+| Three-castle demo 0.4.1 | [Public per-user installer](https://www.mediafire.com/file/7tsnjfjkb1s0swt/Conquering-Critical-Care-Demo-Setup-0.4.1.exe/file) | [Public portable ZIP for Apple Silicon and Intel](https://www.mediafire.com/file/yutjian7t3qxnle/Conquering-Critical-Care-Demo-Mac-0.4.1.zip/file) |
 | Full campaign | Not yet offered as a public download | Not yet offered as a public download |
 
 The [Demo Field Manual](DEMO_MANUAL.md) contains the current system requirements, checksums, opening instructions, security guidance, and removal steps for both platforms.
@@ -117,7 +117,7 @@ The complete campaign contains:
 - **22 boss encounters**;
 - **8 playable classes** across starting disciplines and advanced evolutions;
 - **16 equipable special moves, plus the separate Call AI command**;
-- **684 approved clinical questions**;
+- **810 source-linked clinical questions**; Human clinical review of recently added or revised items remains pending.
 - tactical formations and enemy troop interactions;
 - persistent ICU Resolve, troop reserve, XP, upgrades, and review history;
 - a campaign map with multiple fronts, warnings, and counterattacks;
